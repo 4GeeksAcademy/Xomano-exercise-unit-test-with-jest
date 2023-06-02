@@ -1,11 +1,4 @@
 
-// const fromEuroToDollar = function(valueInEuro){
-//   // convert the given valueInEuro to dollars
-//   let valueInDollar = valueInEuro * 1.2;
-//   //return the dollar value
-//   return valueInDollar;
-// }
-
 test("One euro should be 1.206 dollars", function(){
   const { fromEuroToDollar } = require('./app.js')
   const dollars = fromEuroToDollar(3.5)
@@ -16,7 +9,7 @@ test("One euro should be 1.206 dollars", function(){
 test("One Dollar should be 110 Yen", function(){
   const { fromDollarToYen } = require('./app.js')
   const yen = fromDollarToYen(5)
-  const expected = 5 * 127.9; 
+  const expected = 5 * 127.9;
   expect(fromDollarToYen(5)).toBe(550);
 })
 
