@@ -13,7 +13,7 @@ test("One euro should be 1.206 dollars", function(){
    expect(fromEuroToDollar(3.5)).toBe(4.2);
 })
 
-test("One euro should be 127.9 yen", function(){
+test("One Dollar should be 110 Yen", function(){
   const { fromDollarToYen } = require('./app.js')
   const yen = fromDollarToYen(5)
   const expected = 5 * 127.9; 
